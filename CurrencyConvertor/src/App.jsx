@@ -27,13 +27,10 @@ function App() {
 
   return (
     <div
-        className="flex justify-center w-full h-screen "
-        // style={{
-        //     width: '100vw', height: '100vh',
-        //     backgroundImage: `url('https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
-        //     backgroundSize: 'cover',
-        //     backgroundRepeat: 'no-repeat',
-        // }}
+        className="flex justify-center items-center w-full h-screen bg-no-repeat bg-cover "
+        style={{
+            backgroundImage: `url('https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
+        }}
     >
         <div >
             <div className="max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
