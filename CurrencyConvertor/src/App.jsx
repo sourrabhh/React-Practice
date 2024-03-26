@@ -17,8 +17,8 @@ function App() {
   const swap = () => {
     setFrom(to)
     setTo(from)
-    setConvertedAmount(amount)
-    setAmount(convertedAmount)
+    // setConvertedAmount(amount)
+    // setAmount(convertedAmount)
   }
   
   const convert = () => {
@@ -27,16 +27,16 @@ function App() {
 
   return (
     <div
-        className="w-full min-h-screen justify-center items-center"
-        style={{
-            width: '100vw', height: '100vh',
-            backgroundImage: `url('https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-        }}
+        className="flex justify-center w-full h-screen "
+        // style={{
+        //     width: '100vw', height: '100vh',
+        //     backgroundImage: `url('https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
+        //     backgroundSize: 'cover',
+        //     backgroundRepeat: 'no-repeat',
+        // }}
     >
-        <div className="w-full">
-            <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
+        <div >
+            <div className="max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
                 <form
                     onSubmit={(e) => {
                         e.preventDefault();
@@ -49,7 +49,7 @@ function App() {
                             label="From"
                             amount={amount}
                             currencyOptions={options}
-                            onCurrencyChange={(currency) => setAmount(amount)}
+                            onCurrencyChange={setFrom}
                             selectCurrency={from}
                             onAmountChange={(amount) => setAmount(amount)}
                         />
@@ -69,7 +69,7 @@ function App() {
                             amount={convertedAmount}
                             currencyOptions={options}
                             onCurrencyChange={(currency) => setTo(currency)}
-                            selectCurrency={from}
+                            selectCurrency={to}
                             amountDisable
                         />
                     </div>
