@@ -27,10 +27,10 @@ function App() {
 
   return (
     <div
-        className="flex justify-center w-full h-screen "
+        className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat "
         // style={{
         //     width: '100vw', height: '100vh',
-        //     backgroundImage: `url('https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
+        //     // backgroundImage: `url('https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
         //     backgroundSize: 'cover',
         //     backgroundRepeat: 'no-repeat',
         // }}
